@@ -128,7 +128,7 @@ gpgme_res = versioninfo.lo
 no_undefined = -no-undefined
 export_symbols = -export-symbols $(srcdir)/gpgme.def
 extra_ltoptions = -XCClinker -static-libgcc
-gpgme_w32_extra_libs = -lws2_32
+gpgme_w32_extra_libs =
 
 install-def-file:
 	-$(INSTALL) -d $(DESTDIR)$(libdir)
