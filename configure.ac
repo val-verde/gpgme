@@ -221,7 +221,7 @@ build_w32_qt=no
 available_languages="cl cpp python qt"
 default_languages="cl cpp python qt"
 case "${host}" in
-    x86_64-*mingw32*)
+    x86_64-*mingw*)
         have_w64_system=yes
         ;;
     *-linux-androideabi)
@@ -232,7 +232,7 @@ case "${host}" in
         ;;
 esac
 case "${host}" in
-    *-mingw32*)
+    *-mingw*)
 	have_dosish_system=yes
         have_w32_system=yes
         GPG_DEFAULT='c:\\gnupg\\gpg.exe'
